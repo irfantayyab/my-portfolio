@@ -35,6 +35,40 @@ export const LINKS = [
  },
 ] as const;
 
+export const INTRO_DATA = {
+ headline: (
+  <>
+   <p className="text-lg font-light">Irfan Tayyab</p>
+   Proud <span className="font-semibold">software engineer</span> with{" "}
+   <span className="font-semibold">two years</span> of proven experience. Specialising in{" "}
+   <span className="underline underline-offset-8">Next.js, MERN, SQL & NoSQL</span>.
+  </>
+ ),
+};
+
+export const ABOUT_DATA = {
+ p1: (
+  <>
+   <p className="mb-3">
+    I pursue my passion for programming as a <span className="font-medium">full-stack web developer</span>. My
+    favorite part of programming is the <span className="italic">problem-solving</span> aspect. I love the
+    feeling of finally figuring out a solution to a problem. My core stack is{" "}
+    <span className="font-medium">Next.js, MERN, SQL & NoSQL</span>. I am also familiar with{" "}
+    <span className="font-medium">TypeScript</span>. I am always looking forward to learning new technologies.
+   </p>
+  </>
+ ),
+ p2: (
+  <>
+   <p>
+    <span className="italic">When I&apos;m not coding</span>, I enjoy playing video games, watching movies,
+    and playing with cats 🐱. I enjoy <span className="font-medium">learning new things</span>. I am currently
+    into <span className="font-medium">writing and public speaking</span>.
+   </p>
+  </>
+ ),
+};
+
 export const PROJECTS_DATA = [
  {
   title: "Irfan Tayyab - Portfolio",
@@ -106,23 +140,31 @@ export const EXPERIENCE_DATA = [
   title: "Bachelor's in Computer Science",
   location: "@ Virtual University of Pakistan",
   description:
-   "My university gave me a strong foundation in web development and taught me how to think like a programmer.",
+   "My university gave me a strong foundation in full-stack development and taught me how to think like a programmer. They also contributed to developing my research skills and my ability to deliver timely solutions to problems.",
   icon: React.createElement(LuGraduationCap),
   date: undefined,
  },
  {
   title: "MERN Stack Developer",
-  location: "@ CodeFlamme Pvt Ltd.",
+  location: "@ CodeFlamme Pvt Ltd",
   description:
-   "At the company, I had the responsibility of developing and maintaining full-stack web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js). I built responsive user interfaces, designed RESTful APIs, and handled backend logic and database integration. I collaborated closely with UI/UX designers and other developers to deliver scalable, secure, and high-performing solutions, ensuring smooth data flow between the frontend and backend.",
+   "Developed and maintained full-stack web applications using the MERN stack, building responsive UIs, RESTful APIs, and backend logic with database integration. Worked closely with designers and developers to deliver scalable, secure, and high-performing solutions with smooth frontend-backend data flow.",
   icon: React.createElement(CgWorkAlt),
   date: undefined,
  },
  {
-  title: "Lead Full-Stack Developer (MERN)",
+  title: "Full-Stack Developer (Ai Focused)",
   location: "@ Sprouto Group",
   description:
-   "At the company, I had the responsibility of leading the development of full-stack applications using the MERN stack. I guided a team of developers, reviewed code for quality and consistency, and oversaw project architecture and deployment. Alongside hands-on coding, I coordinated cross-functional efforts, ensured timely delivery of features, and made key technical decisions to maintain performance, scalability, and security across the stack.",
+   "Led full-stack development using the MERN stack, guiding a team through code reviews, architecture decisions, and deployment. Coordinated cross-functional efforts, ensured timely feature delivery, and made key technical decisions around performance, scalability, and security.",
+  icon: React.createElement(FaReact),
+  date: undefined,
+ },
+ {
+  title: "Software Engineer",
+  location: "@ AmentoTech Pvt Ltd",
+  description:
+   "Built multi-step form systems with dynamic schemas and resolvers, keeping the frontend clean and maintainable. Designed modular REST APIs with NestJS and handled incremental database migrations using Prisma, while following structured Git workflows across a collaborative team.",
   icon: React.createElement(FaReact),
   date: undefined,
  },

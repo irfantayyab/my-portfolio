@@ -10,13 +10,18 @@ import ThemeContextProvider from "@/context/theme-context";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
- title: "ℑ𝔯𝔣𝔞𝔫 • Full Stack Developer",
- description: "Irfan is a full-stack developer with 1.5 years of experience.",
+ title: "Irfan Tayyab • Software Engineer",
+ description:
+  "TypeScript Software Engineer | Architecting Scalable Web Applications and Web Experiences with Next.js, MERN, SQL & NoSQL",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
  return (
-  <html lang="en" className="!scroll-smooth" suppressHydrationWarning>
+  <html
+   lang="en"
+   className="!scroll-smooth selection:bg-[#676394] selection:text-white dark:selection:bg-[#dbd7fb] dark:selection:text-black"
+   suppressHydrationWarning
+  >
    <body
     className={`${inter.className} relative bg-gray-50 pt-28 text-gray-950 dark:bg-gray-900 dark:text-gray-200 sm:pt-36`}
     suppressHydrationWarning

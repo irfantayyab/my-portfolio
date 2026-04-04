@@ -9,6 +9,7 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { INTRO_DATA } from "@/lib/data";
 
 export default function Intro() {
  const { ref } = useSectionInView("Home");
@@ -54,15 +55,11 @@ export default function Intro() {
    </div>
 
    <motion.h1
-    className="mb-10 mt-4 max-w-[60ch] px-4 text-2xl font-medium !leading-[1.5]"
+    className="mb-10 mt-4 max-w-[60ch] px-4 text-2xl !leading-[1.5]"
     initial={{ opacity: 0, y: 100 }}
     animate={{ opacity: 1, y: 0 }}
    >
-    <span className="font-bold">Hello, I&apos;m Irfan.</span> I&apos;m a proud{" "}
-    <span className="font-bold">full-stack developer</span> with{" "}
-    <span className="font-bold">one and a half years</span> of experience. I enjoy building{" "}
-    <span className="italic">sites & apps</span>. I specialise in{" "}
-    <span className="underline">MERN and Next.js</span>.
+    {INTRO_DATA.headline}
    </motion.h1>
 
    <motion.div
@@ -88,7 +85,7 @@ export default function Intro() {
 
     <a
      className="borderBlack group flex cursor-pointer items-center gap-2 rounded-full bg-white px-7 py-3 outline-none transition dark:bg-white/10"
-     href="https://drive.google.com/file/d/11DFWdXnvsUQJlluxBtMNMr5gwJC8mJFJ/view?usp=drive_link"
+     href="https://drive.google.com/file/d/1Qr3Mnn_NF30qAbseAubORNqlPfGA1M3P/view?usp=drive_link"
      target="_blank"
     >
      Download CV <HiDownload className="opacity-60 transition group-hover:translate-y-1" />
