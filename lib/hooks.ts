@@ -1,5 +1,5 @@
 import { useActiveSectionContext } from "@/context/active-section-context";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import type { SectionName } from "./types";
 
@@ -24,4 +24,22 @@ export function useSectionInView(sectionName: SectionName) {
  return {
   ref,
  };
+}
+
+export function useMediaQuery(query: string) {
+ const [value, setValue] = useState<boolean | undefined>(undefined);
+
+ useEffect(() => {
+  function onChange(event: MediaQueryListEvent) {
+   setValue(event.matches);
+  }
+
+  const result = matchMedia(query);
+  result.addEventListener("change", onChange);
+  setValue(result.matches);
+
+  return () => result.removeEventListener("change", onChange);
+ }, [query]);
+
+ return value;
 }

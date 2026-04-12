@@ -2,8 +2,9 @@
 
 import { useRef } from "react";
 import { PROJECTS_DATA } from "@/lib/data";
-import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { HiOutlineExternalLink } from "react-icons/hi";
+import { cn } from "@/lib/utils";
 
 type ProjectProps = (typeof PROJECTS_DATA)[number];
 
@@ -23,12 +24,20 @@ export default function Project({ title, description, tags, imageUrl, liveUrl }:
     scale: scaleProgess,
     opacity: opacityProgess,
    }}
-   className="group mb-3 last:mb-0 sm:mb-8"
+   className="group h-full"
   >
    <a href={liveUrl} target="_blank">
-    <article className="relative h-full max-w-[42rem] overflow-hidden rounded-lg border border-black/5 bg-gray-100 transition hover:bg-gray-200 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 sm:pr-8 sm:group-even:pl-8">
-     <div className="flex h-full flex-col px-5 pb-7 pt-4 sm:max-w-[50%] sm:pl-10 sm:pr-2 sm:pt-10 sm:group-even:ml-[18rem]">
-      <h3 className="text-2xl font-semibold">{title}</h3>
+    <article
+     className={cn(
+      "relative h-full max-w-[42rem] overflow-hidden rounded-3xl border border-black/5 bg-gray-100 p-4 transition dark:bg-white/10 dark:text-white sm:p-8",
+      liveUrl ? "hover:bg-gray-200 dark:hover:bg-white/20" : "",
+     )}
+    >
+     <div className="flex h-full flex-col">
+      <div className="flex items-start justify-between gap-4">
+       <h3 className="text-2xl font-semibold">{title}</h3>
+       {liveUrl && <HiOutlineExternalLink className="size-5" />}
+      </div>
       <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">{description}</p>
       <ul className="mt-4 flex flex-wrap gap-2">
        {tags.map((tag, index) => (
@@ -41,10 +50,10 @@ export default function Project({ title, description, tags, imageUrl, liveUrl }:
        ))}
       </ul>
      </div>
-     <Image
+     {/* <Image
       src={imageUrl}
       alt="Project I worked on"
-      quality={95}
+      quality={100}
       className="absolute -right-40 top-8 hidden h-full w-[28.25rem] rounded-t-lg object-cover object-left shadow-2xl transition
          group-even:-left-40
          group-even:right-[initial]
@@ -55,7 +64,7 @@ export default function Project({ title, description, tags, imageUrl, liveUrl }:
          group-even:group-hover:translate-x-3
          group-even:group-hover:translate-y-3
          group-even:group-hover:rotate-2 sm:block"
-     />
+     /> */}
     </article>
    </a>
   </motion.div>

@@ -26,6 +26,10 @@ export const LINKS = [
   hash: "#skills",
  },
  {
+  name: "Technologies",
+  hash: "#technologies",
+ },
+ {
   name: "Experience",
   hash: "#experience",
  },
@@ -73,7 +77,7 @@ export const PROJECTS_DATA = [
  {
   title: "Irfan Tayyab - Portfolio",
   description: "The project is the portfolio you are currently visiting.",
-  tags: ["React", "Next.js", "Tailwind", "TypeScript", "Framer Motion", "Intersection Observer"],
+  tags: ["Next.js", "Tailwind", "TypeScript", "Framer Motion", "Intersection Observer"],
   imageUrl: portfolioimg,
   liveUrl: undefined,
  },
@@ -81,7 +85,7 @@ export const PROJECTS_DATA = [
   title: "Tailwind Filter Form",
   description:
    "This is a filter form made in Vanilla JS. The features include range selection, custom radio-buttons, custom select component, and custom checkboxes and more.",
-  tags: ["HTML", "JavaScript", "TailwindCSS", "DOM Manipulation", "UI Development"],
+  tags: ["HTML", "JavaScript", "Tailwind", "DOM Manipulation", "UI Development"],
   imageUrl: tailwindfilterformimg,
   liveUrl: "https://tailwind-filter-form.vercel.app",
  },
@@ -104,35 +108,115 @@ export const PROJECTS_DATA = [
  {
   title: "Responsive Webpages",
   description: "HTML and CSS only, responsive, cross-browser compatible web pages.",
-  tags: ["HTML", "CSS", "PSD to HTML", "Cross-browser Compatibility"],
+  tags: ["HTML", "CSS", "PSD to HTML", "Cross-browser Compatibility", "Responsive Design"],
   imageUrl: responsivewebpages,
   liveUrl: "https://responsive-webpages-it.firebaseapp.com",
  },
 ] as const;
 
 export const SKILLS_DATA = [
- "HTML",
- "CSS",
- "Tailwind",
- "JavaScript",
- "TypeScript",
- "React",
- "Next.js",
- "Redux Toolkit",
- "Node.js",
- "Express",
- "MongoDB",
- "Redis",
- "SQL",
+ // Main Stack
+ { id: 5, name: "TypeScript", icon: null, type: "stack" },
+ { id: 7, name: "Next.js", icon: null, type: "stack" },
+ { id: 11, name: "Nest.js", icon: null, type: "stack" },
+ { id: 13, name: "SQL", icon: null, type: "stack" },
+ { id: 6, name: "React.js", icon: null, type: "stack" },
+ { id: 3, name: "Tailwind CSS", icon: null, type: "stack" },
+
+ // Hard Skills
+ { id: 1, name: "HTML5", icon: null, type: "primary" },
+ { id: 2, name: "CSS/SCSS/SASS", icon: null, type: "primary" },
+ { id: 4, name: "JavaScript", icon: null, type: "primary" },
+ { id: 8, name: "Redux Toolkit", icon: null, type: "primary" },
+ { id: 9, name: "RTK Query", icon: null, type: "primary" },
+ { id: 10, name: "Node.js", icon: null, type: "primary" },
+ { id: 28, name: "Express.js", icon: null, type: "primary" },
+ { id: 12, name: "MongoDB", icon: null, type: "primary" },
+ { id: 14, name: "API Integration", icon: null, type: "primary" },
+ { id: 15, name: "AI Integration", icon: null, type: "primary" },
+ { id: 16, name: "Web Sockets", icon: null, type: "primary" },
+ { id: 17, name: "Git", icon: null, type: "primary" },
+ { id: 18, name: "Code Testing and Debugging", icon: null, type: "primary" },
+ { id: 19, name: "Code Analysis and Refactoring", icon: null, type: "primary" },
+
+ // Soft Skills
+ { id: 20, name: "Problem Solving", icon: null, type: "secondary" },
+ { id: 21, name: "Project Management", icon: null, type: "secondary" },
+ { id: 22, name: "Research Skills", icon: null, type: "secondary" },
+ { id: 23, name: "Communication", icon: null, type: "secondary" },
+ { id: 24, name: "Visual Studio Code", icon: null, type: "secondary" },
+ { id: 25, name: "Microsoft Office", icon: null, type: "secondary" },
+ { id: 26, name: "Inkscape", icon: null, type: "secondary" },
+ { id: 27, name: "Figma", icon: null, type: "secondary" },
+] as const;
+
+export const TECHNOLOGIES_DATA = [
+ "Socket.io",
+ "React Hook Form",
+ "Zod",
+ "Formik",
+ "Yup",
+ "Docker",
+ "Prisma",
+ "Drizzle",
+ "i18next",
+ "jQuery",
+ "GraphQL",
+ "Apollo Client/Server",
+ "JWT",
+ "Tanstack Query",
+ "Jest",
+ "React Testing Library",
+ "Directus CMS",
+ "Strapi",
  "Firebase",
  "Supabase",
- "Prisma",
+ "Material UI",
+ "MDX",
  "Framer Motion",
- "Socket.io",
- "GraphQL/Apollo",
- "Git",
- "API Integration",
- "AI Integration",
+ "GSAP",
+ "Vite",
+ "Webpack",
+ "Gulp",
+ "Agile Methodology",
+] as const;
+
+export const SCROLLER_SKILLS = [
+ {
+  position: 0,
+  title: "Product Managers",
+  icon: LuGraduationCap,
+ },
+ {
+  position: 1,
+  title: "UX/UI & Founding Designers",
+  icon: LuGraduationCap,
+ },
+ {
+  position: 2,
+  title: "Full-Stack Developers",
+  icon: LuGraduationCap,
+ },
+ {
+  position: 3,
+  title: "Mobile Developers",
+  icon: LuGraduationCap,
+ },
+ {
+  position: 4,
+  title: "AI & Machine Learning Engineers",
+  icon: LuGraduationCap,
+ },
+ {
+  position: 5,
+  title: "Foundational CTOs",
+  icon: LuGraduationCap,
+ },
+ {
+  position: 6,
+  title: "Cross- Functional Pods",
+  icon: LuGraduationCap,
+ },
 ] as const;
 
 export const EXPERIENCE_DATA = [
