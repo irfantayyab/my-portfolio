@@ -10,9 +10,7 @@ export default function Projects() {
  const { ref } = useSectionInView("Projects");
 
  return (
-  <section
-   ref={ref}
-   id="projects" className="scroll-mt-28 mb-28">
+  <section ref={ref} id="projects" className="mb-28 scroll-mt-28">
    <SectionHeading>My projects</SectionHeading>
    <div className="grid" style={{ gridTemplateRows: `repeat(${PROJECTS_DATA.length}, minmax(0, 1fr))` }}>
     {PROJECTS_DATA.map((project, index) => (

@@ -50,11 +50,11 @@ export const ABOUT_DATA = {
  p1: (
   <>
    <p className="mb-3">
-    I pursue my passion for programming as a <span className="font-medium">full-stack web developer</span>. My
-    favorite part of programming is the <span className="italic">problem-solving</span> aspect. I love the
-    feeling of finally figuring out a solution to a problem. My core stack is{" "}
-    <span className="font-medium">Next.js, MERN, SQL & NoSQL</span>. I am also familiar with{" "}
-    <span className="font-medium">TypeScript</span>. I am always looking forward to learning new technologies.
+    I&apos;m a <span className="font-medium">full-stack web developer</span> who thrives on turning complex
+    problems into clean, elegant solutions — that moment of clarity when everything clicks is what keeps me
+    going. My core stack is <span className="font-medium">Next.js, MERN, SQL & NoSQL</span>, with strong
+    proficiency in <span className="font-medium">TypeScript</span>. I&apos;m always exploring new technologies
+    and pushing the boundaries of what I can build.
    </p>
   </>
  ),
