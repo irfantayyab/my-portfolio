@@ -6,6 +6,44 @@ import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import { Toaster } from "react-hot-toast";
 import ThemeContextProvider from "@/context/theme-context";
+import localFont from "next/font/local";
+
+const lmRoman = localFont({
+ src: [
+  {
+   path: "../assets/fonts/lmroman-regular.otf",
+   weight: "400",
+   style: "normal",
+  },
+  {
+   path: "../assets/fonts/lmroman-italic.otf",
+   weight: "400",
+   style: "italic",
+  },
+  {
+   path: "../assets/fonts/lmroman-bold.otf",
+   weight: "700",
+   style: "normal",
+  },
+  {
+   path: "../assets/fonts/lmroman-bold-italic.otf",
+   weight: "700",
+   style: "italic",
+  },
+ ],
+ variable: "--font-lmroman",
+});
+
+const lmRomanSlanted = localFont({
+ src: [
+  {
+   path: "../assets/fonts/lmroman-slant-regular.otf",
+   weight: "400",
+   style: "normal",
+  },
+ ],
+ variable: "--font-lmroman-slanted",
+});
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +61,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
    suppressHydrationWarning
   >
    <body
-    className={`${inter.className} relative bg-gray-50 pt-28 text-gray-950 dark:bg-gray-900 dark:text-gray-200 sm:pt-36`}
+    className={`${lmRoman.variable} ${lmRomanSlanted.variable}  ${inter.className} relative bg-gray-50 pt-28 text-gray-950 dark:bg-gray-900 dark:text-gray-200 sm:pt-36`}
     suppressHydrationWarning
    >
     <div className="absolute right-[11rem] top-[-6rem] -z-10 size-[31.25rem] rounded-full bg-[#fbe2e3] blur-[10rem] dark:bg-[#946263] sm:w-[68.75rem]"></div>

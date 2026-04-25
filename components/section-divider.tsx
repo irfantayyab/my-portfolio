@@ -12,7 +12,7 @@ export default function SectionDivider({
  return (
   <motion.div
    className={cn(
-    "hidden rounded-full bg-gray-200 dark:bg-opacity-20 sm:block",
+    "hidden rounded-full bg-gray-200 dark:bg-[#3e4251] sm:block",
     orientation === "horizontal" ? "mb-24 h-px w-1/6 min-w-16" : "my-24 h-16 w-1",
    )}
    initial={{ opacity: 0, y: 100 }}

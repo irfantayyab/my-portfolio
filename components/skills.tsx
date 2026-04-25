@@ -6,7 +6,7 @@ import { SKILLS_DATA } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { BsCircle, BsCircleFill } from "react-icons/bs";
+import { BsCircleFill } from "react-icons/bs";
 
 const fadeInAnimationVariants = {
  initial: {
@@ -42,11 +42,11 @@ export default function Skills() {
      <p>Soft Skills</p>
     </div>
    </div>
-   <ul className="text-md flex select-none flex-wrap justify-start gap-2 text-gray-800">
+   <ul className="flex select-none flex-wrap justify-start gap-2 text-[15px] text-gray-800">
     {SKILLS_DATA.map((skill) => (
      <motion.li
       className={cn(
-       "rounded-full bg-white px-6 py-1 dark:bg-white/10 dark:text-white/80",
+       "rounded-full bg-white px-6 py-1 dark:text-white/80",
        skill.type === "primary" ? "bg-[#dbd7fb] dark:bg-[#676394]" : "bg-[#fbe2e3] dark:bg-[#946263]",
        skill.type === "stack" ? "bg-gray-300 dark:bg-gray-700" : "",
       )}

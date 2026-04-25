@@ -84,7 +84,7 @@ export default function Intro() {
     </Link>
 
     <a
-     className="group flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white px-7 py-3 outline-none transition dark:bg-white/10"
+     className="group flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white px-7 py-3 outline-none transition dark:bg-[#292f3d]"
      href="https://drive.google.com/file/d/1Qr3Mnn_NF30qAbseAubORNqlPfGA1M3P/view?usp=drive_link"
      target="_blank"
     >
@@ -92,7 +92,7 @@ export default function Intro() {
     </a>
 
     <a
-     className="active:scale-1.05 flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-gray-700 transition hover:scale-[1.05] hover:text-gray-950 focus:scale-[1.05] dark:bg-white/10 dark:text-white/60"
+     className="active:scale-1.05 flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-gray-700 transition hover:scale-[1.05] hover:text-gray-950 focus:scale-[1.05] dark:bg-[#292f3d] dark:text-white/60"
      href="https://www.linkedin.com/in/irfan-tayyab-31b52330b/"
      target="_blank"
     >
@@ -100,7 +100,7 @@ export default function Intro() {
     </a>
 
     <a
-     className="flex max-h-12 max-w-12 cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-[1.35rem] text-gray-700 transition hover:scale-[1.05] hover:text-gray-950 focus:scale-[1.05] active:scale-105 dark:bg-white/10 dark:text-white/60"
+     className="flex max-h-12 max-w-12 cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-[1.35rem] text-gray-700 transition hover:scale-[1.05] hover:text-gray-950 focus:scale-[1.05] active:scale-105 dark:bg-[#292f3d] dark:text-white/60"
      href="https://github.com/irfantayyab/"
      target="_blank"
     >
