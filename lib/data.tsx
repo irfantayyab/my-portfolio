@@ -1,9 +1,6 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import portfolioimg from "@/public/Portfolio.png";
-// import henrysrepairsimg from "@/public/Henry S Repairs.png";
 import newsoftheworldimg from "@/public/News of the World.png";
 import responsivewebpages from "@/public/Responsive Webpages.png";
 import tailwindfilterformimg from "@/public/Tailwind Filter Form.png";
@@ -14,8 +11,8 @@ export const LINKS = [
   hash: "#home",
  },
  {
-  name: "About",
-  hash: "#about",
+  name: "Introduction",
+  hash: "#introduction",
  },
  {
   name: "Projects",
@@ -39,7 +36,7 @@ export const LINKS = [
  },
 ] as const;
 
-export const INTRO_DATA = {
+export const HOME_DATA = {
  headline: (
   <>
    <p className="text-lg font-light">Irfan Tayyab</p>
@@ -50,7 +47,7 @@ export const INTRO_DATA = {
  ),
 };
 
-export const ABOUT_DATA = {
+export const INTRODUCTION_DATA = {
  p1: (
   <>
    <p className="mb-3">
@@ -89,14 +86,6 @@ export const PROJECTS_DATA = [
   imageUrl: tailwindfilterformimg,
   liveUrl: "https://tailwind-filter-form.vercel.app",
  },
- // {
- //  title: "Henry S. Repairs",
- //  description:
- //   "This application lets the admin manage their employees. Employees can keep track of their daily tasks, which can be supervised by the admin.",
- //  tags: ["React", "Redux Toolkit", "TypeScript", "SCSS", "Node.js", "MongoDB", "JWT"],
- //  imageUrl: henrysrepairsimg,
- //  liveUrl: "https://henrysrepairs.vercel.app"
- // },
  {
   title: "News of the World",
   description:

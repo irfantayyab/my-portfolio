@@ -9,9 +9,9 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import { INTRO_DATA } from "@/lib/data";
+import { HOME_DATA } from "@/lib/data";
 
-export default function Intro() {
+export default function Home() {
  const { ref } = useSectionInView("Home");
  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
@@ -59,7 +59,7 @@ export default function Intro() {
     initial={{ opacity: 0, y: 100 }}
     animate={{ opacity: 1, y: 0 }}
    >
-    {INTRO_DATA.headline}
+    {HOME_DATA.headline}
    </motion.h1>
 
    <motion.div

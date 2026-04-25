@@ -12,32 +12,29 @@ import { ChevronsDownUp, ChevronsUpDown } from "lucide-react";
 
 export default function Experience() {
  const { ref } = useSectionInView("Experience");
- const { setRef, fillPercent, scrolledPx, hasEntered, hasExited } = useTimelineFill();
 
- const [openItems, setOpenItems] = useState<string[]>([]);
- const [expandedAll, setExpandedAll] = useState(false);
+ const { setRef, fillPercent } = useTimelineFill();
 
  const allValues = EXPERIENCE_DATA.map((item) => item.title);
 
- const accordionValue = expandedAll ? allValues : openItems;
+ const [openItems, setOpenItems] = useState<string[]>(allValues);
+
+ const expandedAll = openItems.length === allValues.length;
 
  const handleAccordionChange = (values: string[]) => {
-  setExpandedAll(false);
   setOpenItems(values);
  };
 
  const handleExpandAll = () => {
-  const next = !expandedAll;
-  setExpandedAll(next);
-  setOpenItems(next ? allValues : []);
+  setOpenItems(expandedAll ? [] : allValues);
  };
 
  return (
   <section id="experience" ref={ref} className="mb-28 w-full max-w-[53rem] scroll-mt-28 sm:mb-40">
    <SectionHeading className="relative mx-auto w-fit">
-    My experience
+    Experience
     <button
-     onClick={() => setExpandedAll((prev) => !prev)}
+     onClick={handleExpandAll}
      className={cn(
       "absolute left-full top-0 top-1/2 flex size-10 -translate-y-1/2 translate-x-1/2 items-center  justify-center rounded-full text-sm text-gray-500 transition-colors hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-white/10",
      )}
@@ -85,7 +82,7 @@ export default function Experience() {
         )}
         <Accordion
          type="multiple"
-         value={accordionValue}
+         value={openItems}
          onValueChange={handleAccordionChange}
          className="mx-auto my-4 w-full rounded-xl border"
         >
@@ -102,7 +99,7 @@ export default function Experience() {
        </div>
        <Accordion
         type="multiple"
-        value={accordionValue}
+        value={openItems}
         onValueChange={handleAccordionChange}
         className="col-span-1 col-start-3 mx-auto my-4 hidden w-full rounded-xl border border-black/5 bg-gray-100 dark:bg-[#292f3d] xs:block"
        >

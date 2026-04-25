@@ -27,7 +27,7 @@ export default function Skills() {
 
  return (
   <section id="skills" ref={ref} className="mb-28 w-full max-w-[53rem] scroll-mt-28 text-center sm:mb-40">
-   <SectionHeading>My skills</SectionHeading>
+   <SectionHeading>Skills</SectionHeading>
    <div className="mb-8 flex items-center justify-center gap-4 sm:gap-8">
     <div className="flex items-center gap-2 whitespace-nowrap">
      <BsCircleFill className="rounded-full fill-gray-300 dark:fill-gray-700" />

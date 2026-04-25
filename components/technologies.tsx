@@ -29,7 +29,7 @@ export default function Technologies() {
    ref={ref}
    className="mb-28 w-full max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
   >
-   <SectionHeading>Technologies I&apos;ve worked with</SectionHeading>
+   <SectionHeading>Additional Technologies</SectionHeading>
    <ul className="flex select-none flex-wrap justify-center gap-2 text-[15px] text-gray-800">
     {TECHNOLOGIES_DATA.map((technology) => (
      <motion.li
