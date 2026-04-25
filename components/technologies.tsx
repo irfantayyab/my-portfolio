@@ -30,7 +30,7 @@ export default function Technologies() {
    className="mb-28 w-full max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
   >
    <SectionHeading>Technologies I&apos;ve worked with</SectionHeading>
-   <ul className="flex select-none flex-wrap justify-start gap-2 text-[15px] text-gray-800">
+   <ul className="flex select-none flex-wrap justify-center gap-2 text-[15px] text-gray-800">
     {TECHNOLOGIES_DATA.map((technology) => (
      <motion.li
       className="rounded-full border border-black/10 bg-white px-6 py-1 dark:bg-[#292f3d] dark:text-white/80"

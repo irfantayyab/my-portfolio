@@ -42,7 +42,7 @@ export default function Skills() {
      <p>Soft Skills</p>
     </div>
    </div>
-   <ul className="flex select-none flex-wrap justify-start gap-2 text-[15px] text-gray-800">
+   <ul className="flex select-none flex-wrap justify-center gap-2 text-[15px] text-gray-800">
     {SKILLS_DATA.map((skill) => (
      <motion.li
       className={cn(
