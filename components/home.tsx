@@ -9,14 +9,14 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import { HOME_DATA } from "@/lib/data";
+import { HOME_DATA } from "@/constants/home-data";
 
 export default function Home() {
  const { ref } = useSectionInView("Home");
  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
  return (
-  <section ref={ref} id="home" className="mb-28 max-w-[50rem] scroll-mt-[100rem] text-center sm:mb-0">
+  <section ref={ref} id="home" className="mb-28 max-w-[50rem] scroll-mt-[100rem] text-center">
    <div className="flex items-center justify-center">
     <div className="relative">
      <motion.div
@@ -41,7 +41,7 @@ export default function Home() {
    </div>
 
    <motion.h1
-    className="mx-auto mb-10 mt-4 max-w-[32ch] px-4 text-xl !leading-[1.5]"
+    className="mx-auto mb-10 mt-4 max-w-[52ch] px-4 text-xl !leading-[1.5]"
     initial={{ opacity: 0, y: 100 }}
     animate={{ opacity: 1, y: 0 }}
    >
@@ -71,7 +71,7 @@ export default function Home() {
 
     <a
      className="group flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white px-7 py-3 outline-none transition dark:bg-[#292f3d]"
-     href="https://drive.google.com/file/d/1Qr3Mnn_NF30qAbseAubORNqlPfGA1M3P/view?usp=drive_link"
+     href="https://drive.google.com/file/d/1GVJZnIFH8ohaFGOYN9AMO-hi_WJoJKB3/view?usp=drive_link"
      target="_blank"
     >
      Download CV <HiDownload className="opacity-60 transition group-hover:translate-y-1" />

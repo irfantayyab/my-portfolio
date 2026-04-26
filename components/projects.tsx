@@ -2,9 +2,9 @@
 
 import React from "react";
 import SectionHeading from "./section-heading";
-import { PROJECTS_DATA } from "@/lib/data";
 import Project from "./project";
 import { useMediaQuery, useSectionInView } from "@/lib/hooks";
+import { PROJECTS_DATA } from "@/constants/projects-data";
 
 export default function Projects() {
  const { ref } = useSectionInView("Projects");
@@ -12,7 +12,7 @@ export default function Projects() {
 
  return (
   <section ref={ref} id="projects" className="mb-28 scroll-mt-28">
-   <SectionHeading>Projects</SectionHeading>
+   <SectionHeading>Projects ({PROJECTS_DATA.length})</SectionHeading>
    <div
     className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-8"
     style={{ gridTemplateRows: `repeat(${PROJECTS_DATA.length / (aboveSm ? 2 : 1)}, minmax(0, 1fr))` }}

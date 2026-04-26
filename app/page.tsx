@@ -1,5 +1,4 @@
 import Home from "@/components/home";
-import SectionDivider from "@/components/section-divider";
 import Introduction from "@/components/introduction";
 import Projects from "@/components/projects";
 import Skills from "@/components/skills";
@@ -11,8 +10,6 @@ export default function Page() {
  return (
   <main className="flex flex-col items-center px-4">
    <Home />
-   <SectionDivider orientation="vertical" />
-   <Introduction />
    <Projects />
    <Skills />
    <Technologies />
