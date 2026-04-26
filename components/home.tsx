@@ -34,28 +34,14 @@ export default function Home() {
        height="192"
        quality="100"
        priority={true}
-       className="h-24 w-24 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
+       className="h-24 w-24 rounded-full border-2 border-white object-cover shadow-xl"
       />
      </motion.div>
-
-     <motion.span
-      className="absolute bottom-0 right-0 select-none text-4xl"
-      initial={{ opacity: 0, scale: 0 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{
-       type: "tween",
-       stiffness: 125,
-       delay: 0.1,
-       duration: 0.7,
-      }}
-     >
-      👋
-     </motion.span>
     </div>
    </div>
 
    <motion.h1
-    className="mb-10 mt-4 max-w-[60ch] px-4 text-2xl !leading-[1.5]"
+    className="mx-auto mb-10 mt-4 max-w-[32ch] px-4 text-xl !leading-[1.5]"
     initial={{ opacity: 0, y: 100 }}
     animate={{ opacity: 1, y: 0 }}
    >
@@ -91,21 +77,23 @@ export default function Home() {
      Download CV <HiDownload className="opacity-60 transition group-hover:translate-y-1" />
     </a>
 
-    <a
-     className="active:scale-1.05 flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-gray-700 transition hover:scale-[1.05] hover:text-gray-950 focus:scale-[1.05] dark:bg-[#292f3d] dark:text-white/60"
-     href="https://www.linkedin.com/in/irfan-tayyab-31b52330b/"
-     target="_blank"
-    >
-     <BsLinkedin />
-    </a>
+    <div className="flex items-center gap-2">
+     <a
+      className="active:scale-1.05 flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-gray-700 transition hover:scale-[1.05] hover:text-gray-950 focus:scale-[1.05] dark:bg-[#292f3d] dark:text-white/60"
+      href="https://www.linkedin.com/in/irfan-tayyab-31b52330b/"
+      target="_blank"
+     >
+      <BsLinkedin />
+     </a>
 
-    <a
-     className="flex max-h-12 max-w-12 cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-[1.35rem] text-gray-700 transition hover:scale-[1.05] hover:text-gray-950 focus:scale-[1.05] active:scale-105 dark:bg-[#292f3d] dark:text-white/60"
-     href="https://github.com/irfantayyab/"
-     target="_blank"
-    >
-     <FaGithubSquare />
-    </a>
+     <a
+      className="flex max-h-12 max-w-12 cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-[1.35rem] text-gray-700 transition hover:scale-[1.05] hover:text-gray-950 focus:scale-[1.05] active:scale-105 dark:bg-[#292f3d] dark:text-white/60"
+      href="https://github.com/irfantayyab/"
+      target="_blank"
+     >
+      <FaGithubSquare />
+     </a>
+    </div>
    </motion.div>
   </section>
  );

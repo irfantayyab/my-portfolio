@@ -39,10 +39,8 @@ export const LINKS = [
 export const HOME_DATA = {
  headline: (
   <>
-   <p className="text-lg font-light">Irfan Tayyab</p>
-   Proud <span className="font-semibold">software engineer</span> with{" "}
-   <span className="font-semibold">two years</span> of proven experience. Specialising in{" "}
-   <span className="underline underline-offset-8">Next.js, MERN, SQL & NoSQL</span>.
+   <p className="mb-4 font-lmroman text-lg">Irfan Tayyab</p>
+   Proud software engineer with 2 years of proven experience. Specialising in Next.js, MERN, SQL & NoSQL.
   </>
  ),
 };
@@ -51,11 +49,10 @@ export const INTRODUCTION_DATA = {
  p1: (
   <>
    <p className="mb-3">
-    I&apos;m a <span className="font-medium">full-stack web developer</span> who thrives on turning complex
-    problems into clean, elegant solutions — that moment of clarity when everything clicks is what keeps me
-    going. My core stack is <span className="font-medium">Next.js, MERN, SQL & NoSQL</span>, with strong
-    proficiency in <span className="font-medium">TypeScript</span>. I&apos;m always exploring new technologies
-    and pushing the boundaries of what I can build.
+    I&apos;m a full-stack web developer who thrives on turning complex problems into clean, elegant solutions
+    — that moment of clarity when everything clicks is what keeps me going. My core stack is Next.js, MERN,
+    SQL & NoSQL, with strong proficiency in TypeScript. I&apos;m always exploring new technologies and pushing
+    the boundaries of what I can build.
    </p>
   </>
  ),
@@ -73,7 +70,7 @@ export const INTRODUCTION_DATA = {
 export const PROJECTS_DATA = [
  {
   title: "Irfan Tayyab - Portfolio",
-  description: "You are currently looking at it 👉👈",
+  description: "You are currently visiting it.",
   tags: ["Next.js", "Tailwind", "TypeScript", "Framer Motion", "Intersection Observer"],
   imageUrl: portfolioimg,
   liveUrl: undefined,
