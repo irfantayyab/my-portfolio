@@ -1,6 +1,6 @@
 export const LINKS = [
  {
-  name: "Irfan Tayyab",
+  name: "Home",
   hash: "#home",
  },
  {

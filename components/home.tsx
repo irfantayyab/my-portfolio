@@ -12,7 +12,7 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 import { HOME_DATA } from "@/constants/home-data";
 
 export default function Home() {
- const { ref } = useSectionInView("Irfan Tayyab");
+ const { ref } = useSectionInView("Home");
  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
  return (
@@ -29,7 +29,7 @@ export default function Home() {
      >
       <Image
        src="/Irfan_Tayyab.jpg"
-       alt="Irfan Tayyab"
+       alt="Home"
        width="192"
        height="192"
        quality="100"
