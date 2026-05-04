@@ -1,5 +1,4 @@
 import Home from "@/components/home";
-import Introduction from "@/components/introduction";
 import Projects from "@/components/projects";
 import Skills from "@/components/skills";
 import Technologies from "@/components/technologies";
@@ -12,8 +11,8 @@ export default function Page() {
    <Home />
    <Projects />
    <Skills />
-   <Technologies />
    <Experience />
+   <Technologies />
    <Contact />
   </main>
  );

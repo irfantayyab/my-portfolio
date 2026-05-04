@@ -12,7 +12,7 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 import { HOME_DATA } from "@/constants/home-data";
 
 export default function Home() {
- const { ref } = useSectionInView("Home");
+ const { ref } = useSectionInView("Irfan Tayyab");
  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
  return (

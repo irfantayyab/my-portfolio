@@ -1,6 +1,6 @@
 export const LINKS = [
  {
-  name: "Home",
+  name: "Irfan Tayyab",
   hash: "#home",
  },
  {
@@ -12,12 +12,12 @@ export const LINKS = [
   hash: "#skills",
  },
  {
-  name: "Technologies",
-  hash: "#technologies",
- },
- {
   name: "Experience",
   hash: "#experience",
+ },
+ {
+  name: "Technologies",
+  hash: "#technologies",
  },
  {
   name: "Contact",

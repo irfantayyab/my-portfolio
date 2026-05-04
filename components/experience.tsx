@@ -32,7 +32,7 @@ export default function Experience() {
  return (
   <section id="experience" ref={ref} className="mb-28 w-full max-w-[53rem] scroll-mt-28">
    <SectionHeading className="relative mx-auto flex w-fit flex-wrap items-center justify-center gap-5 normal-case sm:block">
-    <span className="w-min xs:w-auto">
+    <span className="min-w-fit xs:w-auto">
      Experience <span className="whitespace-nowrap">({getTotalExperience()})</span>
     </span>
     <button
