@@ -15,7 +15,7 @@ const DRAFT_EXPERIENCE_DATA = [
   id: 2,
   title: "MERN Stack Developer",
   at: "CodeFlamme Pvt Ltd",
-  location: "Model Town, Lahore",
+  location: "Lahore",
   description:
    "Developed and maintained full-stack web applications using the MERN stack, building responsive UIs, RESTful APIs, and backend logic with database integration. Worked closely with designers and developers to deliver scalable, secure, and high-performing solutions with smooth frontend-backend data flow.",
   startDate: "July 2024",
@@ -25,7 +25,7 @@ const DRAFT_EXPERIENCE_DATA = [
   id: 3,
   title: "Full-Stack Developer (AI Focused)",
   at: "Sprouto Group",
-  location: "DHA Phase 8, Lahore",
+  location: "Lahore",
   description:
    "Led full-stack development using the MERN stack, guiding a team through code reviews, architecture decisions, and deployment. Coordinated cross-functional efforts, ensured timely feature delivery, and made key technical decisions around performance, scalability, and security.",
   startDate: "Mar 2025",
@@ -35,11 +35,11 @@ const DRAFT_EXPERIENCE_DATA = [
   id: 4,
   title: "Software Engineer",
   at: "AmentoTech Pvt Ltd",
-  location: "Faisal Town, Lahore",
+  location: "Lahore",
   description:
    "Built multi-step form systems with dynamic schemas and resolvers, keeping the frontend clean and maintainable. Designed modular REST APIs with NestJS and handled incremental database migrations using Prisma, while following structured Git workflows across a collaborative team.",
   startDate: "Nov 2025",
-  endDate: null,
+  endDate: "Oct 2026",
  },
 ];
 

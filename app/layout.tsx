@@ -10,47 +10,25 @@ import localFont from "next/font/local";
 
 const lmRoman = localFont({
  src: [
-  {
-   path: "../assets/fonts/lmroman-regular.otf",
-   weight: "400",
-   style: "normal",
-  },
-  {
-   path: "../assets/fonts/lmroman-italic.otf",
-   weight: "400",
-   style: "italic",
-  },
-  {
-   path: "../assets/fonts/lmroman-bold.otf",
-   weight: "700",
-   style: "normal",
-  },
-  {
-   path: "../assets/fonts/lmroman-bold-italic.otf",
-   weight: "700",
-   style: "italic",
-  },
+  { path: "../assets/fonts/lmroman-regular.otf", weight: "400", style: "normal" },
+  { path: "../assets/fonts/lmroman-italic.otf", weight: "400", style: "italic" },
+  { path: "../assets/fonts/lmroman-bold.otf", weight: "700", style: "normal" },
+  { path: "../assets/fonts/lmroman-bold-italic.otf", weight: "700", style: "italic" },
  ],
  variable: "--font-lmroman",
 });
 
 const lmRomanSlanted = localFont({
- src: [
-  {
-   path: "../assets/fonts/lmroman-slant-regular.otf",
-   weight: "400",
-   style: "normal",
-  },
- ],
+ src: [{ path: "../assets/fonts/lmroman-slant-regular.otf", weight: "400", style: "normal" }],
  variable: "--font-lmroman-slanted",
 });
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
- title: "Irfan Tayyab • Software Engineer",
+ title: "Irfan Tayyab • Full-Stack AI Engineer",
  description:
-  "TypeScript Software Engineer | Architecting Scalable Web Applications and Web Experiences with Next.js, MERN, SQL & NoSQL",
+  "Full-Stack AI Engineer | Architecting scalable web applications and web experiences with Next.js, MERN, SQL & Python",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

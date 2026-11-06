@@ -22,10 +22,7 @@ export default function Home() {
      <motion.div
       initial={{ opacity: 0, scale: 0 }}
       animate={{ opacity: 1, scale: 1 }}
-      transition={{
-       type: "tween",
-       duration: 0.2,
-      }}
+      transition={{ type: "tween", duration: 0.2 }}
      >
       <Image
        src="/Irfan_Tayyab.jpg"
@@ -52,9 +49,7 @@ export default function Home() {
     className="text-md flex flex-col items-center justify-center gap-2 px-4 font-medium sm:flex-row"
     initial={{ opacity: 0, y: 100 }}
     animate={{ opacity: 1, y: 0 }}
-    transition={{
-     delay: 0.1,
-    }}
+    transition={{ delay: 0.1 }}
    >
     <Link
      href="#contact"
@@ -71,7 +66,7 @@ export default function Home() {
 
     <a
      className="group flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white px-7 py-3 outline-none transition dark:bg-[#292f3d]"
-     href="https://drive.google.com/file/d/1GVJZnIFH8ohaFGOYN9AMO-hi_WJoJKB3/view?usp=drive_link"
+     href="https://drive.google.com/file/d/1qP05ic5HG-48ErxPFa0iJQ3EQojmypNz/view?usp=drive_link"
      target="_blank"
     >
      Download CV <HiDownload className="opacity-60 transition group-hover:translate-y-1" />

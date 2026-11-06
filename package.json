@@ -48,5 +48,8 @@
     "@typescript-eslint/typescript-estree": {
       "minimatch": "^11.0.5"
     }
+  },
+  "allowScripts": {
+    "react-vertical-timeline-component": false
   }
 }
