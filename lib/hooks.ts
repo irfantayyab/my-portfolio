@@ -1,5 +1,5 @@
 import { useActiveSectionContext } from "@/context/active-section-context";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { useInView } from "react-intersection-observer";
 import type { SectionName } from "./types";
 
@@ -27,21 +27,20 @@ export function useSectionInView(sectionName: SectionName) {
 }
 
 export function useMediaQuery(query: string) {
- const [value, setValue] = useState<boolean | undefined>(undefined);
+ const subscribe = useCallback(
+  (onChange: () => void) => {
+   const result = matchMedia(query);
+   result.addEventListener("change", onChange);
+   return () => result.removeEventListener("change", onChange);
+  },
+  [query],
+ );
 
- useEffect(() => {
-  function onChange(event: MediaQueryListEvent) {
-   setValue(event.matches);
-  }
-
-  const result = matchMedia(query);
-  result.addEventListener("change", onChange);
-  setValue(result.matches);
-
-  return () => result.removeEventListener("change", onChange);
- }, [query]);
-
- return value;
+ return useSyncExternalStore<boolean | undefined>(
+  subscribe,
+  () => matchMedia(query).matches,
+  () => undefined,
+ );
 }
 
 interface UseTimelineFillOptions {

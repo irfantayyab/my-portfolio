@@ -1,6 +1,5 @@
 import React from "react";
-import { Html, Body, Head, Heading, Hr, Container, Preview, Section, Text } from "@react-email/components";
-import { Tailwind } from "@react-email/tailwind";
+import { Html, Body, Head, Heading, Hr, Container, Preview, Section, Tailwind, Text } from "@react-email/components";
 
 type ContactFormEmailProps = {
  message: string;
@@ -19,7 +18,7 @@ export default function ContactFormEmail({ message, senderEmail }: ContactFormEm
        <Heading className="leading-tight">You received the following message from the contact form</Heading>
        <Text>{message}</Text>
        <Hr />
-       <Text>The sender's email is: {senderEmail}</Text>
+       <Text>The sender&apos;s email is: {senderEmail}</Text>
       </Section>
      </Container>
     </Body>

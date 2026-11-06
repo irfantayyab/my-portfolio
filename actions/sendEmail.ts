@@ -29,12 +29,19 @@ export const sendEmail = async (formData: FormData) => {
    from: "Portfolio Contact form <onboarding@resend.dev>",
    to: "irfantayyib07@gmail.com",
    subject: "Message from Portfolio",
-   reply_to: senderEmail,
+   replyTo: senderEmail,
    react: React.createElement(ContactFormEmail, {
     message: message,
     senderEmail: senderEmail,
    }),
   });
+
+  // Resend returns API errors instead of throwing
+  if (data.error) {
+   return {
+    error: data.error.message,
+   };
+  }
  } catch (error: unknown) {
   return {
    error: getErrorMessage(error),
